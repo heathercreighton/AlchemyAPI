@@ -1,0 +1,13 @@
+<h1>Check the sentiment of a URL text based on a term</h1>
+<p id="notice"><%= notice %></p>
+<div>
+
+<!-- Request a URL and search term from user -->
+	<%= form_tag alchemy_results_path do %>
+		<%= text_field_tag :ticker, nil, placeholder: "Enter the URL" %>
+		<%= text_field_tag :target, nil, placeholder: "Enter the term to search" %>
+		<br>
+		<!-- Results are sent to the "results" page -->
+		<%= submit_tag "Check Sentiment" %>
+	<% end %>
+</div>

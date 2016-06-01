@@ -1,0 +1,12 @@
+<h1>Sentiment Result</h1>
+
+<!-- Results are shown -  url, sentiment type and sentiment score -->
+<% @results.each do |r|%>
+	<p>Url searched:	<%= link_to "#{r.url}", "#{r.url}", :target => "_blank" %></p>
+	<p>Sentiment Type: <%= r.senttype %></p> 
+	<p>Sentiment Score: <%= r.score %></p>
+<% end %>	
+
+<!-- Enter another query -->
+
+<%= link_to 'Submit another URL and Term', root_path %>

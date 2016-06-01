@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  target: MyString
+  urltext: MyString
+  url: MyString
+  senttype: MyString
+  score: 1.5
+
+two:
+  target: MyString
+  urltext: MyString
+  url: MyString
+  senttype: MyString
+  score: 1.5
